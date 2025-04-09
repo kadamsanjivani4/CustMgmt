@@ -152,5 +152,10 @@ namespace CustMgmt.Controllers
         {
             return _context.customerDetails.Any(e => e.CustomerId == id);
         }
+
+        private bool CustomerDetailsExists1(int id)
+        {
+            return _context.customerDetails.Any(e => e.CustomerId == id);
+        }
     }
 }
